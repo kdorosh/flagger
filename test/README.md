@@ -67,7 +67,7 @@ The e2e testing infrastructure is powered by CircleCI and [Kubernetes Kind](http
 * deploy the load tester in the test namespace [e2e-skipper-tests.sh](e2e-skipper-tests.sh)
 * deploy the demo workload (podinfo) and ingress in the test namespace [e2e-skipper-tests.sh](e2e-skipper-tests.sh)
 * test the canary initialization [e2e-skipper-tests.sh](e2e-skipper-tests.sh)
-* test the canary analysis and promotion using weighted traffic and the load testing webhook [e2e-skipper-tests.sh]e2e-skipper-tests.sh)
+* test the canary analysis and promotion using weighted traffic and the load testing webhook [e2e-skipper-tests.sh](e2e-skipper-tests.sh)
 * cleanup test environment [e2e-skipper-cleanup.sh](e2e-skipper-cleanup.sh)
 
 ### CircleCI e2e Traefik workflow
@@ -82,4 +82,4 @@ The e2e testing infrastructure is powered by CircleCI and [Kubernetes Kind](http
 * deploy the load tester in the test namespace [e2e-traefik-tests.sh](e2e-traefik-tests.sh)
 * deploy the demo workload (podinfo) and ingress in the test namespace [e2e-traefik-tests.sh](e2e-traefik-tests.sh)
 * test the canary initialization [e2e-traefik-tests.sh](e2e-traefik-tests.sh)
-* test the canary analysis and promotion using weighted traffic and the load testing webhook [e2e-traefik-tests.sh]e2e-traefik-tests.sh)
+* test the canary analysis and promotion using weighted traffic and the load testing webhook [e2e-traefik-tests.sh](e2e-traefik-tests.sh)
