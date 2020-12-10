@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # This script runs e2e tests for Canary initialization, analysis and promotion
-# Prerequisites: Kubernetes Kind, Helm and NGINX ingress controller
+# Prerequisites: Kubernetes Kind, Helm and Gloo Edge ingress controller
 
 set -o errexit
 
@@ -14,7 +14,7 @@ echo '>>> Installing load tester'
 kubectl apply -k ${REPO_ROOT}/kustomize/tester
 kubectl -n test rollout status deployment/flagger-loadtester
 
-echo '>>> Initialising canary'
+echo '>>> Initializing canary'
 kubectl apply -f ${REPO_ROOT}/test/e2e-workload.yaml
 
 cat <<EOF | kubectl apply -f -
