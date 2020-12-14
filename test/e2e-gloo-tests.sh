@@ -30,8 +30,8 @@ spec:
     routes:
       - matchers:
          - prefix: /
-        routeAction:
-          upstreamGroup:
+        delegateAction:
+          ref:
             name: podinfo
             namespace: test
 EOF
